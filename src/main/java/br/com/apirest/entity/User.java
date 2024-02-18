@@ -3,6 +3,7 @@ package br.com.apirest.entity;
 import java.util.Date;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -41,7 +42,7 @@ public class User {
 	@CreationTimestamp
 	private Date createdAt;
 	
-	@CreationTimestamp
+	@UpdateTimestamp
 	private Date updatedAt;
 
 }

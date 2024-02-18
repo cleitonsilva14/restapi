@@ -3,6 +3,7 @@ package br.com.apirest.entity;
 import java.util.Date;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -36,7 +37,7 @@ public class Post {
 	@Column(name = "created_at")
 	private Date createdAt;
 	
-	@CreationTimestamp
+	@UpdateTimestamp
 	@Column(name="updated_at")
 	private Date updatedAt;
 	
