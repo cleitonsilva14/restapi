@@ -30,7 +30,7 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI customAPI(){
         return new OpenAPI().info(new Info().title("Api Rest").version("1.0.0")
-                .license(new License().name("MIT License").url("MIT"))
+                .license(new License().name("MIT License").url("https://opensource.org/license/mit/"))
         );
     }
 }
